@@ -100,6 +100,7 @@ export default ({
 										onClick={handelSubmit}
 									/>
 								</div>
+								{footer}
 							</div>
 						</div>
 					</div>
