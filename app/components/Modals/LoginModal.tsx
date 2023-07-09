@@ -87,7 +87,7 @@ export default () => {
 				label="Continue with Google"
 				icon={FcGoogle}
 				onClick={() => {
-					// TODO add function
+					signIn("google");
 				}}
 			/>
 			<Button
@@ -95,7 +95,7 @@ export default () => {
 				label="Continue with Github"
 				icon={AiFillGithub}
 				onClick={() => {
-					// TODO add function
+					signIn("github");
 				}}
 			/>
 			<div className="text-neutral-500 text-center mt-4 font-light">

@@ -8,6 +8,7 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-hot-toast";
 import { AiFillGithub } from "react-icons/ai";
 import { FcGoogle } from "react-icons/fc";
+import { signIn } from "next-auth/react";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 
@@ -81,7 +82,7 @@ export default () => {
 				label="Continue with Google"
 				icon={FcGoogle}
 				onClick={() => {
-					// TODO add function
+					signIn("google");
 				}}
 			/>
 			<Button
@@ -89,7 +90,7 @@ export default () => {
 				label="Continue with Github"
 				icon={AiFillGithub}
 				onClick={() => {
-					// TODO add function
+					signIn("github");
 				}}
 			/>
 			<div className="text-neutral-500 text-center mt-4 font-light">
