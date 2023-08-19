@@ -8,6 +8,7 @@ import { signOut } from "next-auth/react";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
 import useLoginModal from "@/app/hooks/useLoginModal";
+import useRentModal from "@/app/hooks/useRentModal";
 
 import Avatar from "../Avatar";
 import MenuItem from "./MenuItem";
@@ -19,6 +20,8 @@ interface UserMenuProps {
 const UserMenu = ({ currentUser }: UserMenuProps) => {
 	const registerModal = useRegisterModal();
 	const loginModal = useLoginModal();
+	const rentModal = useRentModal();
+
 	const [isOpen, setIsOpen] = useState<boolean>(false);
 
 	const toggleOpen = useCallback(() => {
@@ -30,7 +33,8 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
 			loginModal.onOpen();
 			return;
 		}
-	}, [currentUser, loginModal]);
+		rentModal.onOpen();
+	}, [currentUser, loginModal, rentModal]);
 
 	return (
 		<div className="relative">
