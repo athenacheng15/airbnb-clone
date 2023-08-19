@@ -2,6 +2,7 @@ import { TbBeach, TbMountain, TbPool } from "react-icons/tb";
 import {
 	GiBarn,
 	GiBoatFishing,
+	GiCactus,
 	GiCastle,
 	GiCaveEntrance,
 	GiForestCamp,
@@ -71,7 +72,7 @@ export const categories = [
 	},
 	{
 		label: "Cave",
-		icon: GiCaveEntrance,
+		icon: GiCactus,
 		description: "This property is in a cave!",
 	},
 	{

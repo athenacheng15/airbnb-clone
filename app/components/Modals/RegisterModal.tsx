@@ -11,6 +11,7 @@ import { FcGoogle } from "react-icons/fc";
 import { signIn } from "next-auth/react";
 
 import useRegisterModal from "@/app/hooks/useRegisterModal";
+import useLoginModal from "@/app/hooks/useLoginModal";
 
 import Input from "../inputs/Input";
 import Heading from "../Heading";
@@ -19,6 +20,8 @@ import Modal from "./Modal";
 
 export default () => {
 	const registerModal = useRegisterModal();
+	const loginModal = useLoginModal();
+
 	const [isLoading, setIsLoading] = useState(false);
 
 	const {
@@ -42,6 +45,11 @@ export default () => {
 			.catch((err) => toast.error("Something went wrong"))
 			.finally(() => setIsLoading(false));
 	};
+
+	const toggle = useCallback(() => {
+		registerModal.onClose();
+		loginModal.onOpen();
+	}, [loginModal, registerModal]);
 
 	const bodyContent = (
 		<div className="flex flex-col gap-4">
@@ -98,7 +106,7 @@ export default () => {
 					<p>Already have an account?</p>
 					<div
 						className=" text-neutral-800 cursor-pointer hover:underline"
-						onClick={registerModal.onClose}
+						onClick={toggle}
 					>
 						Log in
 					</div>
