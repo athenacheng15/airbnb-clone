@@ -20,16 +20,24 @@ const UserMenu = ({ currentUser }: UserMenuProps) => {
 	const registerModal = useRegisterModal();
 	const loginModal = useLoginModal();
 	const [isOpen, setIsOpen] = useState<boolean>(false);
+
 	const toggleOpen = useCallback(() => {
 		setIsOpen((value) => !value);
 	}, []);
+
+	const onRent = useCallback(() => {
+		if (!currentUser) {
+			loginModal.onOpen();
+			return;
+		}
+	}, [currentUser, loginModal]);
 
 	return (
 		<div className="relative">
 			<div className="flex flex-row items-center gap-3">
 				<div
 					className="hidden md:block test-sm font-semibold py-3 px-4 rounded-full hover:bg-neutral-100 transition cursor-pointer"
-					onClick={() => {}}
+					onClick={onRent}
 				>
 					Airbnb your home
 				</div>
