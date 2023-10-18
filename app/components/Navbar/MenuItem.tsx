@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
 interface MenuItemProps {
-	onClick: () => void;
-	label: string;
+    onClick: () => void;
+    label: string;
 }
 
 export default ({ onClick, label }: MenuItemProps) => {
-	return (
-		<div
-			className="px-4 py-3 hover:bg-neutral-100 transition font-semibold"
-			onClick={onClick}
-		>
-			{label}
-		</div>
-	);
+    return (
+        <div
+            className="px-4 py-3 hover:bg-neutral-100 transition font-semibold"
+            onClick={onClick}
+        >
+            {label}
+        </div>
+    );
 };
