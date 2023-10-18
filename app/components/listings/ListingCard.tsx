@@ -1,16 +1,16 @@
-"use client";
-import { useCallback, useMemo } from "react";
-import { useRouter } from "next/navigation";
-import { format } from "date-fns";
+'use client';
+import { useCallback, useMemo } from 'react';
+import { useRouter } from 'next/navigation';
+import { format } from 'date-fns';
 
-import { SafeUser } from "@/app/types";
+import { SafeUser } from '@/app/types';
 
-import { Listing, Reservation } from "@prisma/client";
+import { Listing, Reservation } from '@prisma/client';
 
-import useCountries from "@/app/hooks/useCountries";
-import Image from "next/image";
-import HeartButton from "../HeartButton";
-import Button from "../Button";
+import useCountries from '@/app/hooks/useCountries';
+import Image from 'next/image';
+import HeartButton from '../HeartButton';
+import Button from '../Button';
 
 interface ListingCardProps {
     data: Listing;
@@ -28,7 +28,7 @@ export default ({
     onAction,
     disabled,
     actionLabel,
-    actionId = "",
+    actionId = '',
     currentUser,
 }: ListingCardProps) => {
     const router = useRouter();
@@ -55,7 +55,7 @@ export default ({
         const start = new Date(reservation.startDate);
         const end = new Date(reservation.endDate);
 
-        return `${format(start, "pp")} - ${format(end, "pp")}`;
+        return `${format(start, 'pp')} - ${format(end, 'pp')}`;
     }, [reservation]);
 
     return (
