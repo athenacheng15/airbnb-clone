@@ -13,28 +13,28 @@ import getCurrentUser from "./actions/getCurrentUser";
 const font = Nunito({ subsets: ["latin"] });
 
 export const metadata = {
-	title: "Airbnb",
-	description: "Airbnb clone",
+    title: "Airbnb",
+    description: "Airbnb clone",
 };
 
 export default async function RootLayout({
-	children,
+    children,
 }: {
-	children: React.ReactNode;
+    children: React.ReactNode;
 }) {
-	const currentUser = await getCurrentUser();
-	return (
-		<html lang="en">
-			<body className={font.className}>
-				<ClientOnly>
-					<ToasterProvider />
-					<RentModal />
-					<LoginModal />
-					<RegisterModal />
-					<Navbar currentUser={currentUser} />
-				</ClientOnly>
-				{children}
-			</body>
-		</html>
-	);
+    const currentUser = await getCurrentUser();
+    return (
+        <html lang="en">
+            <body className={font.className}>
+                <ClientOnly>
+                    <ToasterProvider />
+                    <RentModal />
+                    <LoginModal />
+                    <RegisterModal />
+                    <Navbar currentUser={currentUser} />
+                </ClientOnly>
+                <div className="pb-20 pt-28">{children}</div>
+            </body>
+        </html>
+    );
 }
