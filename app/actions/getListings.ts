@@ -1,10 +1,10 @@
-import prisma from "@/app/libs/prismadb";
+import prisma from '@/app/libs/prismadb';
 
 export default async () => {
     try {
         const listings = await prisma.listing.findMany({
             orderBy: {
-                createAt: "desc",
+                createAt: 'desc',
             },
         });
 
