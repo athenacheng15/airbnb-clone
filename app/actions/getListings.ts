@@ -2,12 +2,18 @@ import prisma from '@/app/libs/prismadb';
 
 export default async () => {
     try {
-        const listing = await prisma.listing.findMany({
+        const listings = await prisma.listing.findMany({
             orderBy: {
-                createAt: 'desc',
+                createdAt: 'desc',
             },
         });
-        return listing;
+
+        const safeListings = listings.map(listing => ({
+            ...listing,
+            createdAt: listing.createdAt.toISOString(),
+        }));
+
+        return safeListings;
     } catch (error: any) {
         throw new Error(error);
     }

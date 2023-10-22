@@ -17,7 +17,7 @@ L.Icon.Default.mergeOptions({
 });
 
 interface MapProps {
-    center: number[];
+    center?: number[];
 }
 
 export default ({ center }: MapProps) => {
