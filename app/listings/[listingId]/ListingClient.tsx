@@ -1,6 +1,7 @@
 'use client';
 
 import type { SafeListings, SafeUser } from '@/app/types';
+import type { Range } from 'react-date-range';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import toast from 'react-hot-toast';
@@ -39,7 +40,7 @@ export default ({
 
     const [isLoading, setIsLoading] = useState(false);
     const [totalPrice, setTotalPrice] = useState(listing.price);
-    const [dateRange, setDateRange] = useState(initialDateRange);
+    const [dateRange, setDateRange] = useState<Range>(initialDateRange);
 
     const category = useMemo(() => {
         return categories.find(item => item.label === listing.category);
