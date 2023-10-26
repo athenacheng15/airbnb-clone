@@ -72,8 +72,7 @@ export default ({
                 toast.success('Listind reserved!');
                 setDateRange(initialDateRange);
 
-                // TODO redirect to /trips
-                router.refresh();
+                router.push('/trips');
             })
             .catch(() => {
                 toast.error('Something went wrong.');
