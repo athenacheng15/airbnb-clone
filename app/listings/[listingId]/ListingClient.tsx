@@ -1,6 +1,6 @@
 'use client';
 
-import type { SafeListings, SafeUser } from '@/app/types';
+import type { SafeListings, SafeReservation, SafeUser } from '@/app/types';
 import type { Range } from 'react-date-range';
 
 import { useCallback, useEffect, useMemo, useState } from 'react';
@@ -25,7 +25,7 @@ const initialDateRange = {
 };
 
 interface ListingClientProps {
-    reservations?: Reservation[];
+    reservations?: SafeReservation[];
     listing: SafeListings & { user: SafeUser };
     currentUser: SafeUser | null;
 }
