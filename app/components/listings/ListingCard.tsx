@@ -53,7 +53,7 @@ export default ({
         const start = new Date(reservation.startDate);
         const end = new Date(reservation.endDate);
 
-        return `${format(start, 'pp')} - ${format(end, 'pp')}`;
+        return `${format(start, 'PP')} - ${format(end, 'PP')}`;
     }, [reservation]);
 
     return (
