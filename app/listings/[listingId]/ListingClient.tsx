@@ -69,7 +69,7 @@ export default ({
                 listingId: listing?.id,
             })
             .then(() => {
-                toast.success('Listind reserved!');
+                toast.success('Listing reserved!');
                 setDateRange(initialDateRange);
 
                 router.push('/trips');
