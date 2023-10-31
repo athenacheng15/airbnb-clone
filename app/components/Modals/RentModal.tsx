@@ -91,7 +91,7 @@ export default () => {
         setIsLoading(true);
 
         axios
-            .post('/api/listing', data)
+            .post('/api/listings', data)
             .then(() => {
                 toast.success('Listing Created!');
                 router.refresh();
