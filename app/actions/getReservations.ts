@@ -23,7 +23,7 @@ export default async (params: IParams) => {
             query.listing = { userId: authorId };
         }
 
-        const resrevations = await prisma.reservation.findMany({
+        const reservations = await prisma.reservation.findMany({
             where: query,
             include: {
                 listing: true,
@@ -33,7 +33,7 @@ export default async (params: IParams) => {
             },
         });
 
-        const safeReservations = resrevations.map(reservation => ({
+        const safeReservations = reservations.map(reservation => ({
             ...reservation,
             createdAt: reservation.createdAt.toISOString(),
             startDate: reservation.startDate.toDateString(),
