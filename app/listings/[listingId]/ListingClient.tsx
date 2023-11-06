@@ -1,22 +1,24 @@
 'use client';
 
-import type { SafeListings, SafeReservation, SafeUser } from '@/app/types';
-import type { Range } from 'react-date-range';
+import type { SafeListings, SafeReservation, SafeUser } from '@Types';
 
-import { useCallback, useEffect, useMemo, useState } from 'react';
-import toast from 'react-hot-toast';
-import { useRouter } from 'next/navigation';
 import axios from 'axios';
+import { useRouter } from 'next/navigation';
+import { useCallback, useEffect, useMemo, useState } from 'react';
+import type { Range } from 'react-date-range';
+import toast from 'react-hot-toast';
 import { differenceInCalendarDays, eachDayOfInterval } from 'date-fns';
 
-import { Reservation } from '@prisma/client';
+import useLoginModal from '@Hooks/useLoginModal';
 
-import useLoginModal from '@/app/hooks/useLoginModal';
-import Container from '@/app/components/Container';
+import { Container } from '@Components';
+import {
+    ListingHead,
+    ListingInfo,
+    ListingReservation,
+} from '@Components/listings';
 import { categories } from '@/app/components/Navbar/constant';
-import ListingHead from '@/app/components/listings/ListingHead';
-import ListingInfo from '@/app/components/listings/ListingInfo';
-import ListingReservation from '@/app/components/listings/ListingReservation';
+
 
 const initialDateRange = {
     startDate: new Date(),

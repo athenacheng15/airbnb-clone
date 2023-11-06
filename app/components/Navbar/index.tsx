@@ -1,8 +1,8 @@
 'use client';
 
-import type { SafeUser } from '@/app/types';
+import type { SafeUser } from '@Types';
 
-import Container from '../Container';
+import { Container } from '@Components';
 
 import Logo from './Logo';
 import Search from './Search';

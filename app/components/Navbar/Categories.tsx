@@ -2,8 +2,7 @@
 
 import { usePathname, useSearchParams } from 'next/navigation';
 
-import Container from '../Container';
-import CategoryBox from '../CategoryBox';
+import { Container, CategoryBox } from '@Components';
 
 import { categories } from './constant';
 

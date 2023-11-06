@@ -1,7 +1,6 @@
-import ClientOnly from '@/app/components/ClientOnly';
-import EmptyState from '@/app/components/EmptyState';
-
 import { getCurrentUser, getListings } from '@Actions';
+
+import { ClientOnly, EmptyState } from '@Components';
 import PorpertiesClient from './PorpertiesClient';
 
 export default async () => {

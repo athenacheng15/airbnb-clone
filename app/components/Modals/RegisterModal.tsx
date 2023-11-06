@@ -3,19 +3,18 @@
 import type { FieldValues, SubmitHandler } from 'react-hook-form';
 
 import axios from 'axios';
+import { signIn } from 'next-auth/react';
 import { useCallback, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { toast } from 'react-hot-toast';
 import { AiFillGithub } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
-import { signIn } from 'next-auth/react';
 
-import useRegisterModal from '@/app/hooks/useRegisterModal';
-import useLoginModal from '@/app/hooks/useLoginModal';
+import useRegisterModal from '@Hooks/useRegisterModal';
+import useLoginModal from '@Hooks/useLoginModal';
 
-import Input from '../inputs/Input';
-import Heading from '../Heading';
-import Button from '../Button';
+import { Heading, Button } from '@Components';
+import { Input } from '@Components/inputs';
 import Modal from './Modal';
 
 export default () => {

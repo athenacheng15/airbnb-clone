@@ -6,7 +6,7 @@ interface AvatarProps {
     src: string | null | undefined;
 }
 
-const Avatar = ({ src }: AvatarProps) => {
+export default ({ src }: AvatarProps) => {
     return (
         <Image
             className="rounded-full"
@@ -18,4 +18,3 @@ const Avatar = ({ src }: AvatarProps) => {
     );
 };
 
-export default Avatar;

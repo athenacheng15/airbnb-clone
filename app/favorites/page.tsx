@@ -1,7 +1,6 @@
-import ClientOnly from '@/app/components/ClientOnly';
-import EmptyState from '@/app/components/EmptyState';
-
 import { getCurrentUser, getFavoriteListings } from '@Actions';
+
+import { ClientOnly, EmptyState } from '@Components';
 import FavoritesClient from './FavoritesClient';
 
 export default async () => {
