@@ -1,8 +1,7 @@
 import ClientOnly from '@/app/components/ClientOnly';
 import EmptyState from '@/app/components/EmptyState';
 
-import getCurrentUser from '@/app/actions/getCurrentUser';
-import getReservations from '@/app/actions/getReservations';
+import { getCurrentUser, getReservations } from '@Actions';
 import TripsClient from './TripsClient';
 
 export default async () => {

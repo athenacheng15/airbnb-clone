@@ -1,5 +1,5 @@
-import getCurrentUser from './actions/getCurrentUser';
-import getListings, { IListingParams } from './actions/getListings';
+import { getCurrentUser, getListings } from '@Actions';
+import { IListingParams } from './actions/getListings';
 import ClientOnly from './components/ClientOnly';
 import Container from './components/Container';
 import EmptyState from './components/EmptyState';
