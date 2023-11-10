@@ -9,6 +9,7 @@ interface HomeProps {
     searchParams: IListingParams;
 }
 
+export const dynamic = 'force-dynamic'
 export default async ({ searchParams }: HomeProps) => {
     const listings = await getListings(searchParams);
     const currentUser = await getCurrentUser();
