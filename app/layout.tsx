@@ -12,7 +12,7 @@ import {
     RentModal,
     LoginModal,
     SearchModal,
-} from '@Components/modal';
+} from '@Components/modals';
 
 const font = Nunito({ subsets: ['latin'] });
 
