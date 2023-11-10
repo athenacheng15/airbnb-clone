@@ -1,8 +1,12 @@
-import useCountries from '@/app/hooks/useCountries';
-import { SafeUser } from '@/app/types';
-import Heading from '../Heading';
+'use client';
+
+import type { SafeUser } from '@Types';
+
 import Image from 'next/image';
-import HeartButton from '../HeartButton';
+
+import useCountries from '@Hooks/useCountries';
+
+import { Heading, HeartButton } from '@Components';
 
 interface ListingHeadProps {
     title: string;

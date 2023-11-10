@@ -1,4 +1,4 @@
-import Loader from './components/Loader';
+import { Loader } from '@Components';
 
 export default () => {
     return <Loader />;

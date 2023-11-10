@@ -1,15 +1,14 @@
 'use client';
 
-import type { SafeListings, SafeUser } from '../types';
+import type { SafeListings, SafeUser } from '@Types';
 
 import { toast } from 'react-hot-toast';
 import axios from 'axios';
 import { useState, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 
-import Heading from '../components/Heading';
-import Container from '../components/Container';
-import ListingCard from '../components/listings/ListingCard';
+import { Heading, Container } from '@Components';
+import { ListingCard } from '@Components/listings';
 
 interface FavoritesClientProps {
     currentUser?: SafeUser | null;
