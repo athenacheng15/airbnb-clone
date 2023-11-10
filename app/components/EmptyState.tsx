@@ -1,8 +1,7 @@
 'use client';
 
 import { useRouter } from 'next/navigation';
-import Heading from './Heading';
-import Button from './Button';
+import { Heading, Button } from '@Components';
 
 interface EmptyState {
     title?: string;

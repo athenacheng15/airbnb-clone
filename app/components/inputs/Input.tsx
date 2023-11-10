@@ -5,7 +5,6 @@ import type {
     FieldValues,
     FieldErrors,
 } from 'react-hook-form';
-
 import { BiDollar } from 'react-icons/bi';
 
 interface InputPropsType {

@@ -9,7 +9,7 @@ import { useRouter } from 'next/navigation';
 
 import Heading from '../components/Heading';
 import Container from '../components/Container';
-import ListingCard from '../components/listings/ListingCard';
+import { ListingCard } from '../components/listings';
 
 interface ReservationsClientProps {
     currentUser: SafeUser | null;

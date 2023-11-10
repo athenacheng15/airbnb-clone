@@ -10,12 +10,11 @@ import { toast } from 'react-hot-toast';
 import { AiFillGithub } from 'react-icons/ai';
 import { FcGoogle } from 'react-icons/fc';
 
-import useRegisterModal from '@/app/hooks/useRegisterModal';
-import useLoginModal from '@/app/hooks/useLoginModal';
+import useLoginModal from '@Hooks/useLoginModal';
+import useRegisterModal from '@Hooks/useRegisterModal';
 
-import Input from '../inputs/Input';
-import Heading from '../Heading';
-import Button from '../Button';
+import { Heading, Button } from '@Components';
+import { Input } from '@Components/inputs';
 import Modal from './Modal';
 
 export default () => {

@@ -4,15 +4,15 @@ import type { SafeUser } from '@/app/types';
 
 import { useCallback, useState } from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
+import { useRouter } from 'next/navigation';
 import { signOut } from 'next-auth/react';
 
-import useRegisterModal from '@/app/hooks/useRegisterModal';
-import useLoginModal from '@/app/hooks/useLoginModal';
-import useRentModal from '@/app/hooks/useRentModal';
+import useRegisterModal from '@Hooks/useRegisterModal';
+import useLoginModal from '@Hooks/useLoginModal';
+import useRentModal from '@Hooks/useRentModal';
 
-import Avatar from '../Avatar';
+import { Avatar } from '@Components';
 import MenuItem from './MenuItem';
-import { useRouter } from 'next/navigation';
 
 interface UserMenuProps {
     currentUser?: SafeUser | null;

@@ -1,6 +1,5 @@
-import prisma from '@/app/libs/prismadb';
-
-import getCurrentUser from './getCurrentUser';
+import { getCurrentUser } from '@Actions';
+import prisma from '@Libs/prismadb';
 
 export default async () => {
     try {

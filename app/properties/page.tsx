@@ -1,9 +1,7 @@
-import ClientOnly from '@/app/components/ClientOnly';
-import EmptyState from '@/app/components/EmptyState';
+import { getCurrentUser, getListings } from '@Actions';
 
-import getCurrentUser from '@/app/actions/getCurrentUser';
+import { ClientOnly, EmptyState } from '@Components';
 import PorpertiesClient from './PorpertiesClient';
-import getListings from '../actions/getListings';
 
 export default async () => {
     const currentUser = await getCurrentUser();
