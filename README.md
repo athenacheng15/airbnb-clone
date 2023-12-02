@@ -40,19 +40,14 @@
 * If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/athenacheng15/airbnb-clone/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
-* Please also read through the [Code Of Conduct](https://github.com/athenacheng15/airbnb-clone/blob/main/CODE_OF_CONDUCT.md) before posting your first idea as well.
 
 ### Getting Started
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-First, run the development server:
+run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
