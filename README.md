@@ -18,22 +18,28 @@
 </div>
 <hr>
 
-<h2 align="left">🖥&nbsp Tech Stack </h2>
-<div align="left">
-  <img src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge" height="28" alt="nextjs logo"  />
-  <img width="4" />
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge" height="28" alt="typescript logo"  />
-  <img width="4" />
-  <img src="https://img.shields.io/badge/Tailwind CSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge" height="28" alt="tailwindcss logo"  />
-  <img width="4" />
-  <img src="https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=for-the-badge" height="28" alt="prisma logo"  />
-  <img width="4" />
-  <img src="https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge" height="28" alt="mongodb logo"  />
-</div>
+ ## 💡 Key Features
+* Implement search filters for guests to find accommodations by property, location, dates, and room specifics.
+* Group houses by property type, allowing users to select from the homepage.
+* Provide detailed pages with photos, descriptions, availability, and pricing for informed choices.
+* Use a date picker for stay periods and automatic price calculation.
+* Add a wishlist feature for saving and organizing properties.
+* Allow hosts to upload listings with photos, location, pricing, and room details.
+* Display booked trips with cancellation options.
+* List hosts' properties with delete functionality.
+* Enable login/signup via email, Google, or GitHub accounts.
 
-<h2 align="left">💡&nbsp About This Project </h2>
+ ## 🛠 Tech Stack 
+![nextjs logo](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white&style=for-the-badge)
+  ![typescript logo](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white&style=for-the-badge)
+  ![tailwindcss logo](https://img.shields.io/badge/TailwindCSS-06B6D4?logo=tailwindcss&logoColor=black&style=for-the-badge)
+  ![prisma logo](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white&style=for-the-badge)
+  ![mongodb logo](https://img.shields.io/badge/MongoDB-47A248?logo=mongodb&logoColor=white&style=for-the-badge)
 
-* TBU
+
+## 📖 Libraries
+* <img src="https://img.stackshare.io/service/11559/zustand.png" alt="Zustand" width="14"/>  **Zustand** : Simplify global state management in React applications with a minimalistic API.
+
 
 ## 🔮 Contributing
 
