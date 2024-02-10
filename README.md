@@ -48,12 +48,26 @@
 * If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/athenacheng15/airbnb-clone/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
+* This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-### Getting Started
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-run the development server:
 
+### Setup .env file:
+```
+DATABASE_URL=
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+GITHUB_ID=
+GITHUB_SECRET=
+NEXTAUTH_SECRET=
+```
+
+### Install packages:
+```bash
+npm i
+```
+
+### Run the development server:
 ```bash
 npm run dev
 ```
