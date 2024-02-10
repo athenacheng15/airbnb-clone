@@ -38,6 +38,8 @@
 
 
 ## 📖 Libraries
+* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiiZD803XYeFxyVSPRNfI8SxO4UABqJcGyreAGxUmUw&s" alt="NextAuth.js" width="14"/>  **NextAuth.js** : add authentication to project for various login methods.
+* <img src="https://pbs.twimg.com/profile_images/1674799535665684482/SgGTyzXN_400x400.png" alt="Next Cloudinary" width="14"/>  **Next Cloudinary**：uploading, storage, optimization, and delivery of images
 * <img src="https://img.stackshare.io/service/11559/zustand.png" alt="Zustand" width="14"/>  **Zustand** : Simplify global state management in React applications with a minimalistic API.
 
 
