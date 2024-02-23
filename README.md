@@ -38,14 +38,14 @@
 
 
 ## 📖 Libraries
-* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiiZD803XYeFxyVSPRNfI8SxO4UABqJcGyreAGxUmUw&s" alt="NextAuth.js" width="14"/>  **NextAuth.js** : add authentication to project for various login methods.
-* <img src="https://pbs.twimg.com/profile_images/1674799535665684482/SgGTyzXN_400x400.png" alt="Next Cloudinary" width="14"/>  **Next Cloudinary**：uploading, storage, optimization, and delivery of images
+* <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLiiZD803XYeFxyVSPRNfI8SxO4UABqJcGyreAGxUmUw&s" alt="NextAuth.js" width="14"/>  **NextAuth.js** : Add authentication to project for various login methods.
+* <img src="https://pbs.twimg.com/profile_images/1674799535665684482/SgGTyzXN_400x400.png" alt="Next Cloudinary" width="14"/>  **Next Cloudinary**：Uploading, storage, optimization, and delivery of images
 * <img src="https://img.stackshare.io/service/11559/zustand.png" alt="Zustand" width="14"/>  **Zustand** : Simplify global state management in React applications with a minimalistic API.
 
 
 ## 🔮 Contributing
 
-* If you have suggestions for adding or removing projects, feel free to [open an issue](https://github.com/athenacheng15/airbnb-clone/issues/new) to discuss it, or directly create a pull request after you edit the *README.md* file with necessary changes.
+* If you have suggestions for the project, feel free to [open an issue](https://github.com/athenacheng15/airbnb-clone/issues/new) to discuss it, or directly create a pull request after you edit the file with necessary changes.
 * Please make sure you check your spelling and grammar.
 * Create individual PR for each suggestion.
 * This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
