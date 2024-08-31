@@ -6,7 +6,7 @@
   <h3 align="center">Airbnb Clone</h3>
 
   <p align="center">
-    This is a full-stack project exercise using NEXT.JS as the framework<br> refer to the video of code with Antonio
+    The full-stack project exercise involves using NEXT.js as the framework to clone Airbnb's main features, replicating its functionality and design.
     <br/>
     <br/>
     <a href="https://arbnb-clone-vert.vercel.app">View Demo</a>
